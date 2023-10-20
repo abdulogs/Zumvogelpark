@@ -1,0 +1,150 @@
+@import "variables";
+
+.banner-section {
+  height: 100%;
+  .splide__track {
+    height: inherit;
+    .splide__list {
+      height: inherit;
+      .splide__slide {
+        height: inherit;
+        position: relative;
+        .image {
+          height: inherit;
+          width: 100%;
+        }
+        .img-overlay {
+          position: absolute;
+          bottom: 0;
+          background: rgb(0, 0, 0);
+          background: rgba(0, 0, 0, 0.5);
+          color: #f1f1f1;
+          width: 100%;
+          color: white;
+          height: inherit;
+          .banner-content-center{
+            text-align: center;
+          }
+          .banner-content-right{
+            text-align: right;
+          }
+          .banner-content-left{
+            text-align: left;
+          }
+          .banner-content {
+            position: absolute;
+            top: 40%;
+            z-index: 999;
+            margin: 0 auto;
+            width: 100%;
+            padding:0 20%;
+          .banner-heading {
+            font-size: 60px;
+            font-weight: bolder;
+            margin: 0;
+            margin-bottom: 20px;
+            color: white;
+            font-family: Mate-Regular;
+          }
+          .banner-description {
+            margin: 0;
+            font-size: 25px;
+            color: white;
+            margin-bottom: 40px;
+            font-family: Mate-Italic;
+            font-weight: normal;
+            }
+            .banner-btn{
+              background-color: $primary;
+              color:#fff;
+              font-size: 15px;
+              padding: 15px 25px;
+              border-radius: 50px;
+              box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+              text-decoration: none;
+              font-weight: bolder;
+              .bx{
+                font-size: 25px;
+                margin-left: 5px;
+                vertical-align: middle;
+              }
+              &:hover{
+                background-color: $secondary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1030px) {
+  .banner-section {
+    height: 700px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .banner-section {
+    height: 600px;
+    .splide__track {
+      .splide__list {
+        .splide__slide {
+          .img-overlay {
+            .banner-content {
+              top: 40%;
+              padding: 0 40px;
+            .banner-heading {
+              font-size: 40px;
+            }
+            .banner-description {
+              font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 500px) {
+  .banner-section {
+    height: 100%;
+    .splide__track {
+      .splide__list {
+        .splide__slide {
+          .img-overlay {
+            .banner-content {
+              top: 40%;
+              padding: 0 40px;
+            .banner-description {
+              font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 400px) {
+  .slider {
+    .splide__track {
+      .splide__list {
+        .splide__slide {
+          .img-overlay {
+            .banner-content {
+              top: 30%;
+            .banner-heading {
+              font-size: 30px;
+            }
+            .banner-description {
+              font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 300px) {}

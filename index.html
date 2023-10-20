@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zum vogelpark | deutsches Restaurant</title>
+    <link rel="stylesheet" href="assets/css/stylesheet.min.css">
+    <link rel="stylesheet" href="assets/libs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="assets/icons/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="assets/libs/lightbox2/css/lightbox.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="navbar" id="navbar">
+        <a href="index.html" class="logo">
+            <img src="assets/images/logo-dark.png" id="logo" class="image" alt="" />
+        </a>
+        <nav class="nav-menu" id="nav-menu">
+            <a href="#home" class="nav-link" onclick="closeSidebar()">Heimat</a>
+            <a href="#aboutus" class="nav-link" onclick="closeSidebar()">Über uns</a>
+            <a href="#ourmenu" class="nav-link" onclick="closeSidebar()">Unser Menü</a>
+            <a href="#gallery" class="nav-link" onclick="closeSidebar()">Galerie</a>
+            <a href="#ourteam" class="nav-link" onclick="closeSidebar()">Unser Team</a>
+            <a href="#contactus" class="nav-link" onclick="closeSidebar()">Kontaktiere uns</a>
+        </nav>
+        <button class="menu-btn bx bx-menu" onclick="openSidebar()"></button>
+    </header>
+    <!-- Header -->
+
+    <!-- Sidebar -->
+    <aside class="sidenav" id="sidenav">
+        <div class="sidebar-content">
+            <div class="sidebar-header">
+                <button type="button" class="close-btn" onclick="closeSidebar()"><span
+                        class="icon bx bx-x"></span></button>
+            </div>
+            <div class="sidebar-body" id="side-menu"></div>
+        </div>
+    </aside>
+    <!-- Sidebar -->
+
+    <main class="content" id="home">
+        <section class="splide banner-section slider" id="slider">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">
+                        <img src="assets/images/03.jpg" alt="" class="image">
+                        <div class="img-overlay">
+                            <div class="banner-content banner-content-center">
+                                <h1 class="banner-heading">Wir freuen uns über Ihren Appetit.</h1>
+                                <h3 class="banner-description">Lassen Sie unser Essen Ihren Magen befriedigen.</h3>
+                                <a href="assets/files/menu.pdf" target="_blank" class="banner-btn">UNSER MENÜ<span
+                                        class="bx bx-list-check"></span></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="assets/images/01.jpg" alt="" class="image">
+                        <div class="img-overlay">
+                            <div class="banner-content banner-content-center">
+                                <h1 class="banner-heading">Von einem herausragenden Häuptling</h1>
+                                <h3 class="banner-description">Wir schaffen Erinnerungen</h3>
+                                <a href="assets/files/menu.pdf" target="_blank" class="banner-btn">UNSER MENÜ<span
+                                        class="bx bx-list-check"></span></a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="splide__slide">
+                        <img src="assets/images/02.jpg" alt="" class="image">
+                        <div class="img-overlay">
+                            <div class="banner-content banner-content-center">
+                                <h1 class="banner-heading">Brauchen Sie Essen und einen guten Ort zum Essen? </h1>
+                                <h3 class="banner-description">Willkommen in unserem bescheidenen Ort, an dem Sie in
+                                    Ruhe gutes Essen genießen können.</h3>
+                                <a href="assets/files/menu.pdf" target="_blank" class="banner-btn">UNSER MENÜ<span
+                                        class="bx bx-list-check"></span></a>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <div id="aboutus"></div>
+        <section class="about-section">
+            <div class="left-col">
+                <img src="assets/images/team-0.png" alt="">
+            </div>
+            <div class="right-col">
+                <h1>Herzlich Willkommen im Ristorante VogelPark in Plankstadt!</h1>
+                <h3> <span class="highlight">Was auch immer Ihr Anlass sein wird,</span> Wir machen es zu einem
+                    unvergesslichen Erlebnis!</h3>
+                <p>
+                    Wir empfangen Sie gerne in unserem gemütlichen Lokal und verwöhnen Sie mit den kulinarischen
+                    Spezialitäten der Küche. Ganz egal, ob nach dem besuch von vogelpark mit Freunden, in der
+                    Mittagspause mit Kollegen oder für ein Abendessen in gediegenem Ambiente - in unserem Restaurant
+                    sind alle willkommen. Bei uns können Sie aus einem breiten Angebot von verschieden Speisen und
+                    Getränken auswählen. Unser Service-Personal geht gerne auf Ihre individuellen Anfragen und Wünsche
+                    ein. Auf der letzten Seite dieser Speisekarte haben wir für Sie eine Kenntlichmachung aller der in
+                    unseren Speisen und Getränken enthaltenen Zusatzstoffe und Allergene aufgeführt. Bei weiteren Fragen
+                    stehen wir Ihnen jederzeit zur Verfügung. Buon Appetito! Benvenuti!
+                </p>
+            </div>
+        </section>
+
+        <div id="openinghours"></div>
+        <section class="hours-section">
+            <div class="image" style="background-image: url('assets/images/03.jpg')"></div>
+            <div class="overlay">
+                <h3 class="heading">
+                    <span class="border"></span>
+                    ÖFFNUNGSZEITEN
+                    <span class="border"></span>
+                </h3>
+                <h6 class="sub-heading">Rufen Sie für Reservierungen an</h6>
+                <div class="row">
+                    <div class="col">
+                        <h2 class="day">Montag bis Donnerstag</h2>
+                        <h3 class="time">11:30 bis 14:00 <br> 17:00 bis 22:00</h3>
+                    </div>
+                    <div class="col">
+                        <h2 class="day">Freitag & Samstag</h2>
+                        <h3 class="time">11:30 bis 14:00 <br> 17:00 bis 23:00</h3>
+                    </div>
+                    <div class="col">
+                        <h2 class="day">Sonntag</h2>
+                        <h3 class="time">11:30 bis 22:00</h3>
+                    </div>
+                </div>
+                <p>RESERVIERUNG NUMMER: <a href="tel:+4917623592290" style="color:white;">+004917623592290</a> </p>
+            </div>
+        </section>
+
+        <div id="ourmenu"></div>
+        <section class="menu-section">
+            <h3 class="heading">UNSER MENÜ</h3>
+            <h5 class="sub-heading">Wählen & schmecken</h5>
+            <p class="description">Vorspeisen, Snacks und mehr
+                würzig lecker lecker appetitlich lecker zart lecker herzhaft kräftig herzhaft</p>
+            <div class="menu-row">
+                <div class="dish-card">
+                    <a class="dish-image" href="assets/images/dishes/1.jpg" data-lightbox="dish"
+                        data-title="Pizza Rucola">
+                        <img src="assets/images/dishes/1.jpg" class="image" alt="">
+                    </a>
+                    <div class="dish-details">
+                        <h3 class="dish-title">Pizza Rucola</h3>
+                        <!-- <p class="dish-des">
+                            scampi mit tomaten, kräutern und knoblauch
+                            in einer feinen buttersauce
+                        </p> -->
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <a class="dish-image" href="assets/images/dishes/2.jfif" data-lightbox="dish"
+                        data-title="Ofenkartoffeln mit Kräuterquark">
+                        <img src="assets/images/dishes/2.jfif" class="image" alt="">
+                    </a>
+                    <div class="dish-details">
+                        <h3 class="dish-title">Ofenkartoffeln mit Kräuterquark</h3>
+                        <!-- <p class="dish-des">Gegrillte Maiskolben mit würziger Kräuterbutter</p> -->
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <a class="dish-image" href="assets/images/dishes/3.jfif" data-lightbox="dish"
+                        data-title="Schnitzel „Wiener-Art“ mit Pommes Frites">
+                        <img src="assets/images/dishes/3.jfif" class="image" alt="">
+                    </a>
+                    <div class="dish-details">
+                        <h3 class="dish-title">Schnitzel „Wiener-Art“ mit Pommes Frites</h3>
+                        <!-- <p class="dish-des">Mit Aioli und Brot</p> -->
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <a class="dish-image" href="assets/images/dishes/4.jpg" data-lightbox="dish"
+                        data-title="Tagliatelle al Salmone">
+                        <img src="assets/images/dishes/4.jpg" class="image" alt="">
+                    </a>
+                    <div class="dish-details">
+                        <h3 class="dish-title">Tagliatelle al Salmone</h3>
+                        <!-- <p class="dish-des">Geröstetes vollkornbrot mit shrimps auf frühlingszwiebel quark </p> -->
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <a class="dish-image" href="assets/images/dishes/5.jpg" data-lightbox="dish"
+                        data-title="Zanderfilet in Zitronensoße!">
+                        <img src="assets/images/dishes/5.jpg" class="image" alt="">
+                    </a>
+                    <div class="dish-details">
+                        <h3 class="dish-title">Zanderfilet in Zitronensoße!</h3>
+                        <!-- <p class="dish-des">Geröstetes vollkornbrot mit tomatenwürfeln, basilikum,
+                            knoblauch und parmesan
+                        </p> -->
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <a class="dish-image" href="assets/images/dishes/6.jfif" data-lightbox="dish"
+                        data-title="Rinderfilet mit kraüterkruste">
+                        <img src="assets/images/dishes/6.jfif" class="image" alt="">
+                    </a>
+                    <div class="dish-details">
+                        <h3 class="dish-title">Rinderfilet mit kraüterkruste</h3>
+                        <!-- <p class="dish-des">mit thunfisch.tomatensauce, kapern, tomaten und
+                            frühlingszwiebeln
+                        </p> -->
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <a class="dish-image" href="assets/images/dishes/7.jpg" data-lightbox="dish"
+                        data-title="Lachsfilet mit Mangokokosnuss Sauce">
+                        <img src="assets/images/dishes/7.jpg" class="image" alt="">
+                    </a>
+                    <div class="dish-details">
+                        <h3 class="dish-title">Lachsfilet mit Mangokokosnuss Sauce</h3>
+                        <!-- <p class="dish-des">Geröstetes vollkornbrot mit tomatenwürfeln, basilikum,
+                            knoblauch und parmesan
+                        </p> -->
+                    </div>
+                </div>
+                <div class="dish-card">
+                    <a class="dish-image" href="assets/images/dishes/8.jpg" data-lightbox="dish" data-title="Rumpsteak">
+                        <img src="assets/images/dishes/8.jpg" class="image" alt="">
+                    </a>
+                    <div class="dish-details">
+                        <h3 class="dish-title">Rumpsteak</h3>
+                        <!-- <p class="dish-des">
+                            220g rindfleisch wahlweise gebraten
+                            Englisch/ Medium/ Well Done
+                        </p> -->
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="extra-details">
+                <a href="assets/files/menu.pdf" target="_blank" class="menu-btn">UNSER MENÜ<span
+                        class="bx bx-list-check"></span></a>
+            </div>
+
+        </section>
+
+        <div id="gallery"></div>
+        <section class="gallery-section">
+            <h3 class="heading"><span class="border"></span>GALERIE<span class="border"></span></h3>
+            <h6 class="sub-heading">
+                Wenn ein Bild mehr sagt als tausend Worte,<br> dann kannst du
+                Stellen Sie sich vor, wie lange es dauern würde, alle unsere köstlichen Angebote zu beschreiben
+            </h6>
+            <div class="gallery-row">
+                <a class="gallery-card" href="assets/images/gallery/beilagensalat.jfif" data-lightbox="gallery">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery/beilagensalat.jfif" class="image" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="bx bx-plus-circle"></span>
+                    </div>
+                </a>
+                <a class="gallery-card" href="assets/images/gallery/Insalata vegi.jfif" data-lightbox="gallery">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery/Insalata vegi.jfif" class="image" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="bx bx-plus-circle"></span>
+                    </div>
+                </a>
+                <a class="gallery-card" href="assets/images/gallery/rumpsteak.jpg" data-lightbox="gallery">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery/rumpsteak.jpg" class="image" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="bx bx-plus-circle"></span>
+                    </div>
+                </a>
+                <a class="gallery-card" href="assets/images/gallery/Tagliatelle lachs.jfif" data-lightbox="gallery">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery/Tagliatelle lachs.jfif" class="image" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="bx bx-plus-circle"></span>
+                    </div>
+                </a>
+                <a class="gallery-card" href="assets/images/gallery/Tagliatelle scampi.jfif" data-lightbox="gallery">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery/Tagliatelle scampi.jfif" class="image" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="bx bx-plus-circle"></span>
+                    </div>
+                </a>
+                <a class="gallery-card" href="assets/images/gallery/Penne popeye.jfif" data-lightbox="gallery">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery/Penne popeye.jfif" class="image" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="bx bx-plus-circle"></span>
+                    </div>
+                </a>
+                <a class="gallery-card" href="assets/images/gallery/curry.jpg" data-lightbox="gallery">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery/curry.jpg" class="image" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="bx bx-plus-circle"></span>
+                    </div>
+                </a>
+                <a class="gallery-card" href="assets/images/gallery/Margherita.jfif" data-lightbox="gallery">
+                    <div class="gallery-image">
+                        <img src="assets/images/gallery/Margherita.jfif" class="image" alt="">
+                    </div>
+                    <div class="card-body">
+                        <span class="bx bx-plus-circle"></span>
+                    </div>
+                </a>
+        </section>
+
+
+        <div id="ourteam"></div>
+        <section class="team-section">
+            <h3 class="heading">UNSER TEAM</h3>
+            <h5 class="sub-heading">Liste der Menschen, die im zumvogelpark</h5>
+            <div class="team-row">
+                <div class="team-card">
+                    <div class="person-image">
+                        <img src="assets/images/team-1.png" class="image" alt="">
+                    </div>
+                    <div class="person-details">
+                        <h3 class="person-name"> John Doe</h3>
+                        <p class="person-des">
+                            Head chief
+                        </p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="person-image">
+                        <img src="assets/images/team-2.png" class="image" alt="">
+                    </div>
+                    <div class="person-details">
+                        <h3 class="person-name"> John Doe</h3>
+                        <p class="person-des">
+                            Head chief
+                        </p>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="person-image">
+                        <img src="assets/images/team-3.png" class="image" alt="">
+                    </div>
+                    <div class="person-details">
+                        <h3 class="person-name"> John Doe</h3>
+                        <p class="person-des">
+                            Head chief
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div id="contactus"></div>
+        <section class="location-section">
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6804.108625388082!2d74.40773127785266!3d31.4951909024979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391905f7d319ce65%3A0x3b146f407d57c9a1!2sNadirabad%20Lahore%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sae!4v1632843585552!5m2!1sen!2sae"
+                allowfullscreen="" loading="lazy"></iframe>
+            <form class="contact-form" id="contact" method="post">
+                <h1 class="heading">Kontaktiere uns</h1>
+                <span class="line"></span>
+                <br>
+                <br>
+                <div class="form-group">
+                    <label for="fname">Vollständiger Namen</label>
+                    <input type="text" class="input-field" placeholder="Schreibe deinen vollständigen Namen"
+                        name="fname" id="fname">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-Mail-Adresse</label>
+                    <input type="text" class="input-field" placeholder="Schreiben Sie Ihre E-Mail-Adresse" name="email"
+                        id="email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Telefon</label>
+                    <input type="text" class="input-field" placeholder="Schreiben Sie Ihre Telefonnummer" name="phone"
+                        id="phone">
+                </div>
+                <div class="form-group">
+                    <label for="message">Nachricht</label>
+                    <textarea name="message" id="message" placeholder="Schreibe deine Nachricht..." rows="3"
+                        class="textarea-field"></textarea>
+                </div>
+                <button type="submit" id="submit" class="btn" name="submit">Einreichen</button>
+            </form>
+        </section>
+
+
+        <footer class="footer">
+            <div class="attract">
+                <h3>KOMMEN & ERLEBEN SIE UNSERE BESTE KÜCHE VON WELTKLASSE</h3>
+                <a href="assets/files/menu.pdf" target="_blank" class="btn">Unser Menü</a>
+            </div>
+            <div class="container">
+                <section class="row">
+                    <div class="col">
+                        <h1 class="heading">Über uns</h1>
+                        <span class="line"></span>
+                        <div class="description">
+                            Wir empfangen Sie gerne in unserem gemütlichen Lokal und verwöhnen Sie mit den kulinarischen
+                            Spezialitäten der Küche. Ganz egal, ob nach dem besuch von vogelpark mit Freunden, in der
+                            Mittagspause mit Kollegen oder für ein Abendessen in gediegenem Ambiente - in unserem
+                            Restaurant
+                            sind alle willkommen.
+                        </div>
+                        <ul class="social-links">
+                            <li><a href="" class="facebook"><span class="icon bx bxl-facebook"></span></a></li>
+                            <li><a href="" class="instagram"><span class="icon bx bxl-instagram"></span></a></li>
+                            <li><a href="" class="youtube"><span class="icon bx bxl-pinterest"></span></a></li>
+                            <li><a href="" class="twitter"><span class="icon bx bxl-twitter"></span></a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3 class="heading">Kontaktiere uns</h3>
+                        <span class="line"></span>
+                        <ul class="contact-list">
+                            <li class="list-item"><b>Adresse :</b></li>
+                            <li class="list-item"><a> Jahnstraße 8 68723 Plankstadt</a></li>
+                            <li class="list-item"><b>Telefon</b></li>
+                            <li class="list-item"><a href="tel:+920323-4004535">+004917623592290</a></li>
+                            <li class="list-item"><b>Email</b></li>
+                            <li class="list-item"><a
+                                    href="mailto:restaurant.vogelpark@gmail.com">restaurant.vogelpark@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <h3 class="heading">öffnungszeiten</h3>
+                        <span class="line"></span>
+                        <ul class="timing-list">
+                            <li class="list-item">
+                                <span class="day">Über uns</span> <span class="time">
+                                    11:30 bis 14:00 - 17:00 bis 22:00
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="day">Dienstag</span> <span class="time">
+                                    11:30 bis 14:00 - 17:00 bis 22:00
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="day">Mittwoch</span> <span class="time">
+                                    11:30 bis 14:00 - 17:00 bis 22:00
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="day">Donnerstag</span> <span class="time">
+                                    11:30 bis 14:00 - 17:00 bis 22:00
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="day">Freitag</span> <span class="time">
+                                    11:30 bis 14:00 - 17:00 bis 23:00
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="day">Samstag</span> <span class="time">
+                                    11:30 bis 14:00 - 17:00 bis 23:00
+                                </span>
+                            </li>
+                            <li class="list-item">
+                                <span class="day">Sonntag</span> <span class="time">11:30 bis 22:00</span>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+            <section class="strip">
+                <p class="footer-logo">
+                    <img src="assets/images/logo-dark.png" id="logo" class="logo" alt="" />
+                </p>
+                <p class="copyright">
+                    &copy; <span id="year"></span> zumvogelpark. Alle Rechte vorbehalten
+                </p>
+            </section>
+        </footer>
+    </main>
+
+
+    <button type="button" class="scroll-to-top bx bx-up-arrow-alt" id="gototop" onclick="movetotop()"></button>
+    <a href="https://api.whatsapp.com/send?phone=+4917623592290" target="_blank"
+        class="whatsapp-btn bx bxl-whatsapp"></a>
+
+    <div id="response"></div>
+
+    <!-- page js -->
+    <script type="text/javascript" src="assets/libs/splide/dist/js/splide.min.js"></script>
+    <script type="text/javascript" src="assets/libs/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/libs/lightbox2/js/lightbox.min.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script type="text/javascript" src="assets/js/message.js"></script>
+    <script type="text/javascript" src="modules/contact/js/data.js"></script>
+
+</body>
+
+</html>
